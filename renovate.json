@@ -38,7 +38,8 @@
         "python"
       ],
       "matchUpdateTypes": [
-        "minor"
+        "minor", 
+        "patch"
       ],
       "groupName": "minor updates",
       "group": true,
