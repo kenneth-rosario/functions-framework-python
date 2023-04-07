@@ -1,6 +1,8 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "group:allNonMajor",
+    
   ],
   "ignorePaths": [
     "examples/**",
@@ -8,9 +10,6 @@
   ],
   "packageRules": [
     {
-      "matchDepTypes": [
-        "direct"
-      ],
       "matchPackagePatterns": [
         "*"
       ],
@@ -24,27 +23,6 @@
       "groupName": "major updates",
       "labels": [
         "major"
-      ]
-    },
-    {
-      "matchDepTypes": [
-        "direct"
-      ],
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "automerge": false,
-      "depTypeList": [
-        "python"
-      ],
-      "matchUpdateTypes": [
-        "minor", 
-        "patch"
-      ],
-      "groupName": "minor updates",
-      "group": true,
-      "labels": [
-        "minor"
       ]
     }
   ]
