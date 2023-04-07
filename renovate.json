@@ -2,14 +2,14 @@
   "extends": [
     "config:base"
   ],
+  "ignorePaths": [
+    "examples/**",
+    "test/**"
+  ],
   "packageRules": [
     {
       "matchDepTypes": [
         "direct"
-      ],
-      "excludePaths": [
-        "examples/**",
-        "test/**"
       ],
       "packagePatterns": [
         "*"
@@ -20,6 +20,7 @@
       ],
       "major": {
         "groupName": "major updates",
+        "versioning": "major",
         "labels": [
           "major"
         ]
@@ -27,6 +28,7 @@
       "minor": {
         "groupName": "minor updates",
         "group": true,
+        "versioning": "minor",
         "labels": [
           "minor"
         ]
