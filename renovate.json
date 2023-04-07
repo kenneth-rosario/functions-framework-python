@@ -11,28 +11,40 @@
       "matchDepTypes": [
         "direct"
       ],
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "*"
       ],
       "automerge": false,
       "depTypeList": [
         "python"
       ],
-      "major": {
-        "groupName": "major updates",
-        "versioning": "major",
-        "labels": [
-          "major"
-        ]
-      },
-      "minor": {
-        "groupName": "minor updates",
-        "group": true,
-        "versioning": "minor",
-        "labels": [
-          "minor"
-        ]
-      }
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "groupName": "major updates",
+      "labels": [
+        "major"
+      ]
+    },
+    {
+      "matchDepTypes": [
+        "direct"
+      ],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "automerge": false,
+      "depTypeList": [
+        "python"
+      ],
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "groupName": "minor updates",
+      "group": true,
+      "labels": [
+        "minor"
+      ]
     }
   ]
 }
