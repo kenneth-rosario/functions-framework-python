@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "direct"
+      ],
+      "excludePaths": [
+        "examples/**",
+        "test/**"
+      ],
+      "packagePatterns": [
+        "*"
+      ],
+      "automerge": true,
+      "depTypeList": [
+        "python"
+      ],
+      "major": {
+        "groupName": "major updates",
+        "labels": [
+          "major"
+        ]
+      },
+      "minor": {
+        "groupName": "minor updates",
+        "group": true,
+        "labels": [
+          "minor"
+        ]
+      }
+    }
+  ]
+}
