@@ -1,29 +1,28 @@
 {
-  "extends": [
-    "config:base",
-    "group:allNonMajor",
-    
-  ],
-  "ignorePaths": [
-    "examples/**",
-    "test/**"
-  ],
-  "packageRules": [
-    {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "automerge": false,
-      "depTypeList": [
-        "python"
-      ],
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "groupName": "major updates",
-      "labels": [
-        "major"
-      ]
-    }
-  ]
+   "extends":[
+      "config:base",
+      "group:allNonMajor"
+   ],
+   "ignorePaths":[
+      "examples/**",
+      "test/**"
+   ],
+   "packageRules":[
+      {
+         "matchPackagePatterns":[
+            "*"
+         ],
+         "automerge":false,
+         "depTypeList":[
+            "python"
+         ],
+         "matchUpdateTypes":[
+            "major"
+         ],
+         "groupName":"major updates",
+         "labels":[
+            "major"
+         ]
+      }
+   ]
 }
