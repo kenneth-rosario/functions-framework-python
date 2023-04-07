@@ -51,9 +51,9 @@ setup(
     python_requires=">=3.5, <4",
     install_requires=[
         "flask>=1.0,<3.0",
-        "click>=7.0,<8.0",
+        "click==8.1.0",
         "watchdog>=1.0.0",
-        "gunicorn>=19.2.0,<21.0; platform_system!='Windows'",
+        "gunicorn==20.0.4; platform_system!='Windows'",
         "cloudevents>=1.2.0,<2.0.0",
     ],
     entry_points={
