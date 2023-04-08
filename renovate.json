@@ -8,9 +8,6 @@
    ],
    "packageRules":[
       {
-         "matchDepTypes": [
-            "direct"
-         ],
          "matchPackagePatterns":[
             "*"
          ],
@@ -19,13 +16,9 @@
          ],
          "matchUpdateTypes":[
             "major"
-         ],
-         "groupName":"major updates"
+         ]
       },
       {
-         "matchDepTypes": [
-            "direct"
-         ],
          "matchPackagePatterns":[
             "*"
          ],
@@ -36,8 +29,7 @@
             "minor",
             "patch"
          ],
-         "groupName":"minor updates",
-         "group":true
+         "groupName":"minor updates"
       }
    ]
 }
