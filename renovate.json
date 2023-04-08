@@ -1,16 +1,35 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", "group:allNonMajor", "schedule:monthly"],
-  "packageRules": [
-    {
-      "description": "Create a PR whenever there is a new major version",
-      "matchUpdateTypes": [
-        "major"
-      ]
-    }
+  "extends": [
+    "config:base"
   ],
   "ignorePaths": [
-    "examples/**"
+    "examples/**",
+    "test/**"
   ],
-  "pinVersions": false
-}
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "depTypeList": [
+        "python"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "groupName": "major updates",
+    },
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "depTypeList": [
+        "python"
+      ],
+      "matchUpdateTypes": [
+        "minor", "patch", "pin", "digest"
+      ],
+      "groupName": "minor updates",
+      "group": true,
+    }
+  ]
