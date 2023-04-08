@@ -34,7 +34,7 @@
          ],
          "matchUpdateTypes":[
             "minor",
-            "patch",
+            "patch"
          ],
          "groupName":"minor updates",
          "group":true
