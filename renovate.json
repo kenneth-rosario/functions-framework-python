@@ -1,36 +1,39 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "ignorePaths": [
-    "examples/**",
-    "test/**"
-  ],
-  "packageRules": [
-    {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "depTypeList": [
-        "python"
-      ],
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "groupName": "major updates",
-    },
-    {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "depTypeList": [
-        "python"
-      ],
-      "matchUpdateTypes": [
-        "minor", "patch", "pin", "digest"
-      ],
-      "groupName": "minor updates",
-      "group": true,
-    }
-  ]
+   "extends":[
+      "config:base"
+   ],
+   "ignorePaths":[
+      "examples/**",
+      "test/**"
+   ],
+   "packageRules":[
+      {
+         "matchPackagePatterns":[
+            "*"
+         ],
+         "depTypeList":[
+            "python"
+         ],
+         "matchUpdateTypes":[
+            "major"
+         ],
+         "groupName":"major updates"
+      },
+      {
+         "matchPackagePatterns":[
+            "*"
+         ],
+         "depTypeList":[
+            "python"
+         ],
+         "matchUpdateTypes":[
+            "minor",
+            "patch",
+            "pin",
+            "digest"
+         ],
+         "groupName":"minor updates",
+         "group":true
+      }
+   ]
 }
