@@ -35,8 +35,6 @@
          "matchUpdateTypes":[
             "minor",
             "patch",
-            "pin",
-            "digest"
          ],
          "groupName":"minor updates",
          "group":true
