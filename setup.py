@@ -53,7 +53,7 @@ setup(
         "flask>=1.0,<3.0",
         "click==8.1.0",
         "watchdog>=1.0.0",
-        "gunicorn==20.0.4; platform_system!='Windows'",
+        "gunicorn==20.1.0; platform_system!='Windows'",
         "cloudevents>=1.2.0,<2.0.0",
     ],
     entry_points={
