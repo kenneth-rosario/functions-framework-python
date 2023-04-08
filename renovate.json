@@ -8,10 +8,6 @@
          "matchPackagePatterns":[
             "*"
          ],
-         "depTypeList":[
-            "python",
-            "action"
-         ],
          "matchUpdateTypes":[
             "major"
          ]
@@ -19,10 +15,6 @@
       {
          "matchPackagePatterns":[
             "*"
-         ],
-         "depTypeList":[
-            "python",
-            "action"
          ],
          "matchUpdateTypes":[
             "minor",
